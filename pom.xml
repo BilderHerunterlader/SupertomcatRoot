@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.bilderherunterlader</groupId>
 	<artifactId>supertomcatroot</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>SupertomcatRoot</name>
 	<description>Supercomat Root POM</description>
@@ -359,7 +359,7 @@
 		<url>https://github.com/BilderHerunterlader/SupertomcatRoot.git</url>
 		<connection>scm:git:https://github.com/BilderHerunterlader/SupertomcatRoot.git</connection>
 		<developerConnection>scm:git:https://github.com/BilderHerunterlader/SupertomcatRoot.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>supertomcatroot-1.0.0</tag>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
