@@ -85,9 +85,14 @@
 				<version>2.3.1</version>
 			</dependency>
 			<dependency>
+				<!--
+				Keep version 3.42.0.1 for now. Because in version 3.43.0.0 support for JDBC3Statement.getGeneratedKeys was removed. 
+				It seems like there should be added again or at least a replacement implemented with this pull:
+				https://github.com/xerial/sqlite-jdbc/pull/1035
+				-->
 				<groupId>org.xerial</groupId>
 				<artifactId>sqlite-jdbc</artifactId>
-				<version>3.44.1.0</version>
+				<version>3.42.0.1</version>
 			</dependency>
 			<dependency>
 				<groupId>org.ehcache</groupId>
