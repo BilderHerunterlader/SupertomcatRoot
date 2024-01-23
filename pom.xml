@@ -135,9 +135,9 @@
 				<version>2.0.6.1</version>
 			</dependency>
 			<dependency>
-				<groupId>net.sf.jtidy</groupId>
+				<groupId>com.github.jtidy</groupId>
 				<artifactId>jtidy</artifactId>
-				<version>r938</version>
+				<version>1.0.5</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.gson</groupId>
