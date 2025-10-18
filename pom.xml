@@ -85,9 +85,9 @@
 				<version>5.5.1</version>
 			</dependency>
 			<dependency>
-				<groupId>org.nanohttpd</groupId>
-				<artifactId>nanohttpd</artifactId>
-				<version>2.3.1</version>
+				<groupId>org.glassfish.grizzly</groupId>
+				<artifactId>grizzly-http-server</artifactId>
+				<version>4.0.2</version>
 			</dependency>
 			<dependency>
 				<groupId>org.xerial</groupId>
@@ -159,6 +159,11 @@
 				<groupId>org.freedesktop.tango</groupId>
 				<artifactId>tango-icon-theme</artifactId>
 				<version>0.8.90</version>
+			</dependency>
+			<dependency>
+				<groupId>io.github.blackears</groupId>
+				<artifactId>svg-salamander</artifactId>
+				<version>1.1.5.2</version>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.jaxb</groupId>
@@ -367,6 +372,31 @@
 						<publishingServerId>sonatypecentral</publishingServerId>
 						<autoPublish>true</autoPublish>
 						<waitUntil>published</waitUntil>
+					</configuration>
+				</plugin>
+				<plugin>
+					<!-- Ignore execution of copy-dependencies in Eclipse, so that Snapshot depencies of open projects in Eclipse can be used for testing -->
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-dependency-plugin</artifactId>
+										<versionRange>[1.0.0,)</versionRange>
+										<goals>
+											<goal>copy-dependencies</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore/>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
 					</configuration>
 				</plugin>
 			</plugins>
