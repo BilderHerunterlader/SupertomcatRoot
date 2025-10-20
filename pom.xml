@@ -16,7 +16,7 @@
 	</licenses>
 	<developers>
 		<developer>
-			<name>Christian Frank</name>
+			<name>Christian F.</name>
 			<email>bilderherunterlader@gmail.com</email>
 			<organization>BilderHerunterlader</organization>
 			<organizationUrl>https://github.com/BilderHerunterlader</organizationUrl>
@@ -175,22 +175,17 @@
 			<dependency>
 				<groupId>org.junit.jupiter</groupId>
 				<artifactId>junit-jupiter-engine</artifactId>
-				<version>5.14.0</version>
+				<version>6.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.junit.jupiter</groupId>
 				<artifactId>junit-jupiter-params</artifactId>
-				<version>5.14.0</version>
+				<version>6.0.0</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	
 	<repositories>
-		<!-- Repository for image4j -->
-		<repository>
-			<id>mulesoft.org</id>
-			<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
-		</repository>
 		<!-- Sonatype Snapshot Respository -->
 		<repository>
 			<name>Central Portal Snapshots</name>
