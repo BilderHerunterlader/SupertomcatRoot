@@ -383,7 +383,7 @@
 										<artifactId>maven-dependency-plugin</artifactId>
 										<versionRange>[1.0.0,)</versionRange>
 										<goals>
-											<goal>copy-project-jar</goal>
+											<goal>copy</goal>
 											<goal>copy-dependencies</goal>
 										</goals>
 									</pluginExecutionFilter>
